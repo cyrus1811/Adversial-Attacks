@@ -36,7 +36,7 @@ class Net(nn.Module):
 # --- Load model and setup device ---
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = Net().to(device)
-model.load_state_dict(torch.load("mnist_cnn_new.pth", map_location=device))
+model.load_state_dict(torch.load("mnist_cnn_best.pth", map_location=device))
 model.eval()
 print(f"✅ Model loaded on {device}")
 
