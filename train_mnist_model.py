@@ -106,7 +106,7 @@ def main():
         test(model, device, test_loader)
     
     # Save the model
-    torch.save(model.state_dict(), "mnist_cnn.pth")
+    torch.save(model.state_dict(), "mnist_cnn_new.pth")
     print("✓ Model saved as mnist_cnn.pth")
 
 if __name__ == '__main__':
